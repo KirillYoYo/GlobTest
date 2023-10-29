@@ -1,0 +1,26 @@
+.user-pop-up {
+  .information {
+    margin-top: 40px;
+
+    .row {
+      display: flex;
+      margin-bottom: 12px;
+
+      .left {
+        max-width: 174px;
+        flex: 1;
+      }
+      .right {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        flex: 1;
+      }
+    }
+  }
+
+  .additional-information {
+    margin-top: 55px;
+    line-height: 18px;
+  }
+}

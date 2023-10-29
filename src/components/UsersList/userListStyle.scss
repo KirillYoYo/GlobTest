@@ -1,0 +1,38 @@
+.user-list-page {
+  padding-top: 63px;
+
+  .input-search-wp {
+    margin-bottom: 32px;
+  }
+
+  .users-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .user-item {
+      box-shadow: 0px 0px 20px 0px #0000001A;
+      width: 357px;
+      height: 314px;
+      border-radius: 16px;
+      padding: 24px;
+      box-sizing: border-box;
+      margin-bottom: 24px;
+      cursor: pointer;
+
+      .name {
+        margin-bottom: 25px;
+      }
+
+      > div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+
+        img {
+          margin-right: 14px;
+        }
+      }
+    }
+  }
+}
