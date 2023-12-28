@@ -10,9 +10,47 @@ body {
 
 h1 {
   margin: 0;
+  margin-bottom: 25px;
 }
 
 .content {
   margin: 0 auto;
   width: 1121px;
+}
+
+#app > .container {
+  background: #fff;
+  min-height: 100%;
+  box-shadow: 1px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.log {
+  padding: 7px 30px;
+  background: rgba(0,0,0, 0.2);
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+/**/
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

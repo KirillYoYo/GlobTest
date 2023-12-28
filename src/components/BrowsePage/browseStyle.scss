@@ -1,0 +1,35 @@
+.browse-page-content {
+  display: flex;
+  flex-direction: row;
+  padding-top: 60px;
+  min-height: 100%;
+
+  .left {
+    width: 40%;
+    position: relative;
+    min-height: 100%;
+
+    .data-name-item {
+      padding: 4px;
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: 500;
+      cursor: pointer;
+
+      &:hover {
+        background: rgba(0,0,0, 0.2);
+      }
+
+      &.active {
+        background: rgba(0,0,0, 0.3);
+      }
+    }
+  }
+  .right {
+    padding-left: 40px;
+
+    .sort-filter-wp {
+      padding-bottom: 30px;
+    }
+  }
+}

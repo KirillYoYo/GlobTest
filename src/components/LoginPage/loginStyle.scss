@@ -1,0 +1,13 @@
+.login-wp {
+  height: calc(100% - 90px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .login-form {
+    width: 100%;
+    max-width: 540px;
+    height: 360px;
+    padding: 25px;
+  }
+}

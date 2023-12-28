@@ -4,7 +4,6 @@ import IsLoginContext from "@src/IsLoginContext";
 const IsLoginProvider = ({children}: {children: string | JSX.Element}) => {
 
   const storageLogin = window.localStorage.getItem('login')
-  console.log('storageLogin', storageLogin)
   const [isLogin, setIsLogin] = useState(storageLogin && JSON.parse(storageLogin));
 
   useEffect(() => {
