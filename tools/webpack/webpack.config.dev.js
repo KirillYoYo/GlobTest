@@ -1,6 +1,8 @@
+const path = require("path");
+
 module.exports = {
   mode: 'development',
-  entry: ['./src/main.tsx'],
+  entry: ['./src/Main.tsx'],
   module: {
     rules: require('./webpack.rules'),
   },
@@ -16,7 +18,11 @@ module.exports = {
   stats: 'errors-warnings',
   devtool: 'cheap-module-source-map',
   devServer: {
+    historyApiFallback: true,
     open: true,
+    static: {
+      directory: path.join(__dirname, "/"),
+    },
   },
   optimization: {
     splitChunks: {
